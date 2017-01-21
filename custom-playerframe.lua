@@ -1,10 +1,10 @@
 -- Enable "All triggers"
 -- Add as Trigger 2
--- Trigger on custom
--- Trigger on event
--- Event: PLAYER_ENTERING_WORLD
+-- Type = Custom
+-- Event type = Event
+-- Event(s) = PLAYER_ENTERING_WORLD
 
--- Trigger
+-- Custom trigger
 function (e)
     local r = WeakAuras.regions["Player health"].region
     local b = CreateFrame("Button", "WAPlayerFrameButton", r, "SecureUnitButtonTemplate")
@@ -23,7 +23,7 @@ function (e)
     return true
 end
 
--- Untrigger
+-- Custom untrigger
 function (e)
 	return false
 end
